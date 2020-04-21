@@ -37,9 +37,7 @@ var posXY=[
         ];
 
 function move(id){
-
 	if(!pause){
-
 	var i =1;
 	for(i=1; i<10;i++){
 		if(outDiv[i]==id)
@@ -52,7 +50,6 @@ function move(id){
 	target = whereCanGo(i);
    
    if(target != 0){
-
    	outDiv[i]=0;
    	//since we moved the cube out so the div is empty
     outDiv[target]=id;
@@ -79,13 +76,11 @@ function move(id){
 }
 
 function whereCanGo(num){
-	var j=0;
-	
+	var j=0;	
 	for(j=0;j<moveSpace[num].length;j++){
 		if(outDiv[moveSpace[num][j]]==0){
 				return moveSpace[num][j];			
-		}
-				
+	  }				
 	}
 	return 0;
 }
@@ -136,7 +131,7 @@ function random_d(){
         
     }
 }
-//The idea here is generating a random number to, and then swith the to th cube with the ith cube
+//The idea here is generating a random number named "to", and then swith the "to"th cube with the "i"th cube
 
 window.onload=function(){
     reset();
