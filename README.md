@@ -1,2 +1,3 @@
 A small puzzle game
-![image]（）
+！[image]（https://github.com/megan1028/Puzzle-Game/game image.png）
+
